@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans');
+
+body {
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Berkshire Swash';
+  padding: 15px 0;
+}
+
+/* Responsive Image */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Flexbox Container */
+.content {
+  display: flex;
+}
+
+.image-box {
+  flex-shrink: 1;
+}
+
+.content-box {
+  margin-left: 25px;
+  flex-shrink: 3;
+  text-align: justify;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Responsive Media Queries */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

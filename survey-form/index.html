@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Linux Survey Form</h1>
+
+    <p id="description">Survey about Linux distros</p>
+
+    <form action="" id="survey-form">
+      <div class="form-row">
+        <div class="form-label">
+          <label id="name-label" for="name">* Name</label>
+        </div>
+
+        <div class="form-control">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label id="email-label" for="email">* Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label id="number-label" for="age">Age</label>
+        </div>
+
+        <div class="form-control">
+          <input type="number" name="age" id="number" min="1" max="100" placeholder="Age">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="used">Do you use any Linux distro on your PC?</label>
+        </div>
+
+        <div class="form-control">
+          <select name="used" id="dropdown">
+            <option value="Yes">Yes</option>
+            <option value="No">No, but I've used it before</option>
+            <option value="Never">No, I never used a Linux distro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="opensource">Did you already contributed for open sources projects?</label>
+        </div>
+
+        <div class="form-control">
+          <label class="fit-line"><input type="radio" name="opensource" value="Yes"> Yes</label>
+          <label class="fit-line"><input type="radio" name="opensource" value="No"> No</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="distros">Which of these Distros have you used?</label>
+        </div>
+
+        <div class="form-control">
+          <label class="fit-line"><input type="checkbox" name="distros" value="ubuntu"> Ubuntu</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="debian"> Debian</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="fedora"> Fedora</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="elementary"> Elementary OS</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="mint"> Mint</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="arch"> Arch</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="centos"> CentOS</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="opensuse"> openSUSE</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="kali"> Kali</label>
+          <label class="fit-line"><input type="checkbox" name="distros" value="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="comments">Additional comments</label>
+        </div>
+
+        <div class="form-control">
+          <textarea name="comments" cols="30" rows="3" placeholder="Comments"></textarea>
+        </div>
+      </div>
+
+      <div id="form-submit">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+ 
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
